@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Watch Man</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link  href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--<link rel="stylesheet" href="css/base1.css">!-->
+   
+  
+     <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+       
+        body{
+         /* background-image: url(imgs/background-1413126_1280.jpg);*/
+         /* background-color: #005689;*/
+         /* background-color:#217131;*/
+         /* background-image: url(imgs/vertical_cloth.png);*/
+          background-image: url(imgs/whitediamond_@2X.png);
+          color: #333;
+          font-family: 'Open Sans', sans-serif;
+          /*background-color: #769656;*/
+         
+         /*background-color: #769656;*/
+         line-height: 125%;
+
+         /*color: #769656;*/
+
+          
+         
+
+        }
+        .bg{
+          /*background-image: url(imgs/background-1413126_1280.jpg);*/
+          /*background-color: rgba(253,253,253,.65);*/
+          /*background-color: #D2B7A2;*/
+          
+          padding: 1rem;
+          padding-top: 0;
+        }
+        h1{
+          margin-bottom: 0;
+          
+        }
+        #main{
+          /*background-image: url(imgs/background-1413126_1280.jpg);*/
+          /*background-color: rgba(253,253,253,1);*/
+          background-color: #F7F5E6;
+          /*background-image: url(imgs/ep_naturalwhite.png);*/
+          background-color: #ffe;
+          margin-top: -30px;
+          padding: 0;
+          box-shadow: 3px 3px 20px;
+         /* border-top: 20px solid #217131;*/
+        }
+        nav{
+             margin-top: 4rem;
+        }
+        ul.nav1 {     display:;
+                      margin-left: auto;
+                      margin-right:auto;
+                      padding-left: ;
+                      list-style: none;
+                      margin-bottom: -0.8rem;
+                      /*background-color: red;*/ 
+                      
+                      text-align: center;
+                    }
+        .nav1 li {
+                display: inline;
+                width:;
+                border-left:;
+                padding: 1rem;
+                padding-top: 1.5rem;
+                /*background-color:#E7DED5;*/
+                 /*background-image: url(imgs/ep_naturalwhite.png);*/
+                 background-color: #FFFFEE;
+                border-radius: 10px 10px 0 0;
+              }
+        .nav1 a{
+                display: inline-block;
+                text-decoration: none;
+                padding: 5px 10px 5px 10px;
+                color: #00303F;
+                font-family:'Municipal' ;
+                font-weight: ;
+                letter-spacing: ;
+                width: 12rem;
+              }
+              .jumbotron{
+               /* background-color: #005689*/
+               /*background-color:#217131;*/
+                /*background-image: -moz-linear-gradient(top,rgba(240,240,0,1),#217131 10%,#217131 100%);*/
+           /* background-color: #45225E;*/
+             /*background-image: url(imgs/bgimg.fw.png);*/
+             /*background-color: #1E2226;*/
+               /* color:#D2B7A2;*/
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                 background-image: url(imgs/vertical_cloth.png);
+              }
+              /*#left-sb .card,  #right-sb .card { 
+                box-shadow:inset 2px 2px 20px; 
+                } use media querry here to make this appear only in small screen*/
+          .card{
+            padding: 1rem;
+           /* background-color: #F7F7F7;*/
+            /*background-color: #D2B7A2;*/
+            /*background-color: #FBF8EA;*/
+            background-color: rgba(255,255,238,1);
+            box-shadow: 1px 1px 5px rgba(240,240,238,1);
+            
+            margin-bottom: 1rem;
+            border-radius:;
+            
+          }
+          .card-header {
+            /*background-color: #1E2226;*/
+            background-color: #00303F;
+            padding: 10px;
+            margin: -10px -10px 5px -10px;
+            font-family: 'Municipal';
+            letter-spacing: 2px;
+
+          }
+          .card-header a {
+            color: #FBF8EA;
+          }
+          .card-img{
+            margin-bottom: 5px;
+          }
+         .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 780px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 995px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.page-headline{
+ /*background-image: -moz-linear-gradient(top,rgba(240,240,0,1),#217131 100%,#217131 100%);*/
+ margin-bottom: 5px;
+ color: #00303F; 
+  font-size: 24px;   
+ font-family: 'Peace Sans'; 
+
+}
+.subtitle-font{
+   font-family: 'Municipal'
+}
+a {
+   color: #00303F;
+}
+.newstxt{margin-top: -32px;}
+
+
+/*div#textFade {
+
+    max-height: 235px !important;
+    position: relative;
+    overflow: hidden;
+    color: ;
+    
+}
+#textOverlay {
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  padding-top: 15px;
+  background-image: -moz-linear-gradient(top, transparent, #D2B7A2);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(210,183,162,.3)),color-stop(1, rgba(210,183,162,1)));
+}*/
+img.newstxt {
+  margin-bottom: -3rem;
+}
+
+a.view {
+  background-color: transparent;
+  border-radius: 15px 0 0 15px;
+  padding: ;
+  color: #00303F;
+  border:0.1rem solid #00303F;
+}
+a.btn-xs {
+  padding: 5px;
+  font-size: 10px;
+}
+a.view:hover{
+  background-color: #00303F;
+  color:#fff; 
+  border:0.1rem solid #00303F;
+}
+
+.accent-color{
+  color: #D63E15;
+}
+#page-footer {
+  box-shadow: 3px 3px 20px;
+}
+
+@keyframes bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%, 55% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+
+  }
+}
+
+.bounceOut {
+  animation-name: bounceOut;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.slideText { position:relative; }
+        .slideText h3 { position:absolute; left:0; top:0; }
+
+
+    </style>
+  </head>
+  <body>
+  
+  <header>
+   <div class="jumbotron ">
+    <div class="container">
+        <h1 class="text-center"><!--<img src="imgs/logowatch1trans2.png" alt="the watch man logo" class="img-responsive center-block">-->
+        <img src="imgs/newslogo2.png" alt="the watch man logo" class="img-responsive center-block newstxt"></h1>
+         <nav class="hidden-xs">
+           <ul class="nav1 text-uppercase center-block">
+                        <li ><a href="#" >World-news</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li ><a href="#" >Entertainment</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Politics</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Business</a></li>
+                     </ul>
+           
+         </nav>
+         </div>
+         </div>
+         
+    
+  </header>
+ 
+  <div id="main" class="container">
+  <div class="bg">
+         <!--<hr>
+            <h2 class="text-center">HEADER  GOES HERE...CASHY HEADER HERE..MAKE IT SLIDE</h2>
+         <hr>-->
+         <div class="row">
+             <div class="col-xs-12 page-headline">
+                <h3 class="slideText text-center">THE WATCHMAN NEWSPAPER AND MAGAZINE</h3>
+                <h3 class="slideText text-center">The watchman newspaper and magazine</h3>
+                       <h3 class="slideText text-center">  Politics: Pdp and Apc fights it out</h3>
+                          <h3 class="slideText text-center"> Education: Asuu strike continues</h3>
+                           <h3 class="slideText text-center"> Health: Five tips to help you stay healthy</h3>
+                            <h3 class="slideText text-center">Sport: Man united vs Chelsea FC this saturday</h3><!--DESCRIPTIVE SUBTITLE  HERE. MAKE IT GOES ACROSS-->
+                
+             </div>
+          </div>
+    <div class="row">
+
+      <div id="left-sb" class="col-sm-3">
+
+        <div class="card">
+             <div class="card-header">
+                <a href="#" >EDUCATION</a><span class="pull-right"><a href="#">NEWS</a></span>
+              </div>
+             <figure class="">
+               <img src="imgs/133.jpg" class="img-responsive card-img" alt="">
+              <figcaption>
+               <p class="accent-color"> IMAGE CAPTION HERE...<a href="#" class="pull-right">READ MORE</a></p>
+              </figcaption>
+            </figure>
+             <div style="clear: both; border-top:1px solid #00303F; border-bottom:1px solid #00303F;padding-top: 5px;padding-bottom:12px;">
+              <img src="imgs/2207.jpg" class="pull-left" width="70px" height="70px" 
+              style="margin: ; margin-right: 5px;">
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 <a href="#">Read More</a></p>
+               </p>
+             </div>
+             <div style="clear: both; border-bottom:1px solid #00303F; padding-top: 4px; padding-bottom: 12px;">
+              <img src="imgs/2207.jpg" class=" pull-left" width="70px" height="70px" 
+              style="margin: ; margin-right: 5px; ">
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  <a href="#">Read More</a></p>
+               </p>
+             </div>
+            
+            <!--<hr>-->
+         </div>
+
+        <div class="card">
+              <figure>
+                 <img src="imgs/5.jpg" class="img-responsive card-img">
+                <figcaption>
+                 <p  class="accent-color"> IMAGE CAPTION HERE..<a href="#">Read More</a></p>
+                </figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <a href="#">Read More</a></p>
+              <h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC </h4>
+             
+        </div>
+
+         <div class="card ">
+               
+                 <img src="imgs/19.jpg" class="img-responsive card-img">
+                  <figcaption>
+                   <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
+                  </figcaption>
+                </figure>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                   <a href="#">Read More</a>
+                </p>
+                <h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC</h4>
+                
+          </div>
+
+           <div class="card">
+              
+              <figure>
+                 <!--<img src="imgs/123.jpg" class="img-responsive card-img">-->
+                <figcaption>
+                 <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
+                </figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <a href="#" >Read More</a>
+              </p>
+              <!--<h4>TITLE RELATED TO TOPIC </h4>-->
+              
+          </div>
+
+          </div>
+      <div class="col-sm-6">
+        <figure class="card">
+               <div id="carousel-example-generic" class="carousel slide " data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                          </ol>
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img class="img-responsive" src="imgs/9.jpg" alt="...">
+                              <div class="carousel-caption">
+                                <p><small>Thurs 4<sup>th</sup> sept :</small>Get cheap a house  <a href="#" class="btn btn-primary btn-sm view">Read More</a></p>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive" src="imgs/133.jpg" alt="...">
+                              <div class="carousel-caption">
+                                <p><small>Tues 16<sup>th</sup> sept :</small>Get cheap a house  <a href="#" class="btn btn-primary btn-sm view">Read More</a></p>
+                              </div>
+                            </div>
+                            <div class="item">
+                              <img class="img-responsive" src="imgs/web@paddy.png" alt="...">
+                              <div class="carousel-caption">
+                                    <p><small>Sun 1<sup>st</sup> Oct :</small>Get cheap a house  <a href="#" class="btn btn-primary btn-sm view">Read More</a></p>
+                              </div>
+                         
+                          </div>
+
+                          <!-- Controls -->
+                          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+             </div>
+           <figcaption>
+              <p class="accent-color subtitle-font">RECENT : NEWS ON THE GLOBE<a href="#" class="pull-right  bounce">NEWS</a></p>
+            </figcaption>
+        </figure>  
+        <h4 class="accent-color subtitle-font">ANOTHER LONG TITLE WITH PIC HERE!</h4>
+        <hr>
+         <div class="col-sm-6 ">
+
+
+         <div class="card ">
+         
+         <div class="card-header">
+           <a href="#">WORLD</a><span class="pull-right"><a href="#">NEWS</a></span>
+           
+         </div>
+         <div class="card-body">
+               <img src="imgs/4162.jpg" class="img-responsive card-img">
+               <p>
+                 <strong>Pakistan Ousted prime minister’s daughter fights for family legacy</strong>
+
+                 <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
+               </p>
+               </div>
+         </div>
+         </div>
+         <div class="col-sm-6 ">
+
+
+         
+         <div class="card">
+
+           <div class="card-header">
+              <a href="#">POLITICS</a><span class="pull-right"><a href="#">NEWS</a></span>
+            </div>
+            <div class="card-body">
+                <img src="imgs/Mohammed-Abdullahi-Abubakar-281x158.jpg" class="img-responsive card-img">
+                 <p>
+                 <b>Northeast APC governors differ on restructuring, true federalism</b>
+              
+                  <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
+               </p>
+             </div>
+            </div>
+
+         </div>
+         <div class="col-sm-6 ">
+
+           <div class="card">
+
+            <div class="card-header">
+              <a href="#">FASHION</a><span class="pull-right"><a href="#">NEWS</a></span>
+            </div>
+            <div class="card-body">
+             <img src="imgs/fashion11.jpg" class="img-responsive card-img">
+               <p>
+                 <b>MHN AMBASSADOR 2017: Reigning Queen plans to fight early marriage</b>
+                 <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
+               </p>
+             </div>
+            </div>
+         </div>
+         <div class="col-sm-6 ">
+           <div class="card">
+            <div class="card-header">
+               <a href="#">HEALTH</a><span class="pull-right"><a href="#">NEWS</a></span>
+              </div>
+             <div class="card-body">
+                    <img src="imgs/Pioneering-treatment-281x158.jpg" class="img-responsive card-img">
+                 <p>
+                 <strong>Pioneering nerve treatment gives man in vegetative state signs of consciousness for five years</strong>
+                  <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
+               </p>
+              </div>
+
+        
+         </div>
+    
+      </div>
+       <div  class="col-sm-6 ">
+           <div id=""  class="card">
+            <div class="card-header">
+                 <a href="#">BUSINESS</a><span class="pull-right"><a href="#">NEWS</a></span>
+           </div>
+             <div class="card-body">
+                <img src="imgs/Arm-3-281x158.jpg" class="img-responsive card-img">
+                 <p>
+                <strong>Arms smuggling may scare investors, experts warn</strong>
+               
+               <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a></p>
+              </div>
+
+        
+         </div>
+    
+      </div>
+           <div class="col-sm-6 ">
+
+           <div class="card">
+
+            <div class="card-header">
+                  <a href="#">LOCAL</a><span class="pull-right"><a href="#">NEWS</a></span>   
+            </div>
+            <div class="card-body">
+                 <img src="imgs/Lafarge.jpg" class="img-responsive card-img">
+               <p>
+                 <strong>Lafarge advocates cultural shift in concrete solutions for road construction</strong>
+                  <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
+                
+               </p>
+             </div>
+            </div>
+         </div>
+     </div>
+
+     <div id="right-sb" class="col-sm-3">
+
+         <div class="card ">
+              <div class="card-header">
+                <a href="#">SPORT</a><span class="pull-right"><a href="#">NEWS</a></span>
+              </div>
+          <div class="card-body">
+             <figure class="">
+                 <img src="imgs/Iwobi-281x158.jpg" class="img-responsive card-img">
+                <figcaption>
+                 <p class="accent-color"><strong>Iwobi, Akpeyi return as Rohr keeps faith with Yaoundé 22</strong><a href="#" class="pull-right"></a></p>
+                </figcaption>
+              </figure>
+            
+              <div style="border-top:1px solid #00303F; border-bottom:1px solid #00303F; padding-top: 5px; padding-bottom: 12px; ">
+              <img src="imgs/2207.jpg" class="pull-left" width="70px" height="70px" 
+              style="margin: ; margin-right: 5px;">
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                 <a href="#">Read More</a></p>
+               </p>
+             </div>
+             <div style="clear: both;  border-bottom:1px solid #00303F; padding-top: 4px; padding-bottom: 12px;">
+              <img src="imgs/2207.jpg" class=" pull-left" width="70px" height="70px" 
+              style="margin: ; margin-right: 5px; ">
+              <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  <a href="#">Read More</a></p>
+               </p>
+             </div>
+
+              <h5 class="text-center"><a href="#" class="btn btn-primary view">VIEW MORE</a></h5>    <!--make this appear on small screen only--> 
+             <!-- <hr>-->
+            </div>
+          </div>
+
+        <div class="card">
+              <figure>
+                 <img src="imgs/123.jpg" class="img-responsive card-img">
+                <figcaption>
+                 <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
+                </figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              <a href="#">Read More</a></p>
+           
+              <h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC </h4>
+             
+         </div>
+          
+          <div class="card">
+              
+              <figure>
+                 <img src="imgs/sportnews1.png" class="img-responsive card-img">
+                <figcaption>
+                 <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
+                </figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <a href="#" >Read More</a>
+              </p>
+              <h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC </h4>
+            
+          </div>
+
+          <div class="card">
+              
+              <figure>
+                 <!--<img src="imgs/123.jpg" class="img-responsive card-img">-->
+                <figcaption>
+                 <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
+                </figcaption>
+              </figure>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+               <a href="#" >Read More</a>
+              </p>
+              <!--<h4>TITLE RELATED TO TOPIC </h4>-->
+              
+          </div>
+        
+      
+        </div>
+    </div>
+  </div>
+  <div id="page-footer" class="jumbotron" style="padding: 5%; margin-bottom: -10%; border-radius: 0;">
+   
+      
+    </div>
+  </div>
+ 
+    
+  
+  <!--functionality to add .1 nav tabs 2 when the read button is clicked change unread to read -->
+      <script src="js/jquery-1.11.3.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="js/main.js"></script>
+
+      <script>
+        $(document).ready( function() {
+
+          //var slideText = ["The watchman newspaper and magazine",
+                           // "Politics: Pdp and Apc fights it out",
+                            //"Education: Asuu strike continues",
+                            //"Health: Five tips to help you stay healthy",
+                           // "Sport: Man united vs Chelsea FC this saturday"
+                          //];
+              
+  // $('.page-headline').html("<marquee><h2>Politics: Pdp and Apc fights it out</h2></marquee>");
+            $('.page-headline h3:gt(0)').hide();
+                        setInterval(function()
+                        {$('.page-headline :first-child').fadeOut(0).next('h3.slideText').fadeIn(2000).end().appendTo('.page-headline');}, 6000);
+        });
+
+        
+
+      </script>
+  </body>
+</html>
