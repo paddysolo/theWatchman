@@ -8,10 +8,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link  href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <!--<link rel="stylesheet" href="css/base1.css">!-->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">  <!--<link rel="stylesheet" href="css/base1.css">!-->
    
-  
      <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -24,12 +22,12 @@
          /* background-color:#217131;*/
          /* background-image: url(imgs/vertical_cloth.png);*/
           background-image: url(imgs/whitediamond_@2X.png);
-          color: #333;
-          font-family: 'Open Sans', sans-serif;
+          color: #111;
+         font-family: 'Open Sans Condensed', sans-serif;
           /*background-color: #769656;*/
          
          /*background-color: #769656;*/
-         line-height: 125%;
+         line-height: 140%;
 
          /*color: #769656;*/
 
@@ -200,9 +198,17 @@ a.view {
   background-color: transparent;
   border-radius: 15px 0 0 15px;
   padding: ;
-  color: #00303F;
-  border:0.1rem solid #00303F;
+  color:   #fff;
+  border:0.1rem solid   #fff;
 }
+ .newscard a.view{
+  background-color: transparent;
+  border-radius: 15px 0 0 15px;
+  padding: ;
+  color:  #00303F;
+  border:0.1rem solid  #00303F;
+}
+ 
 a.btn-xs {
   padding: 5px;
   font-size: 10px;
@@ -239,13 +245,137 @@ a.view:hover{
 
 .bounceOut {
   animation-name: bounceOut;
+  animation-duration: 1s;
+  animation-fill-mode: ;
+}
+@keyframes bounceIn {
+  from, 20%, 40%, 60%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-name: bounceIn;
   animation-duration: 3s;
-  animation-fill-mode: forwards;
+}
+@keyframes tada {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%, 20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.tada {
+  animation-name: tada;
+  animation-duration: 3s;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce{
+  animation-name: bounce;
+  transform-origin: center bottom;
+  animation-duration: 1s;
 }
 .slideText { position:relative; }
         .slideText h3 { position:absolute; left:0; top:0; }
-
-
+/*.advert{ 
+         position: relative;
+         margin-bottom: 40%;
+          }
+  .advert img {
+      position: absolute;
+      top:0;
+      left: 0;
+  }
+*/
     </style>
   </head>
   <body>
@@ -253,7 +383,7 @@ a.view:hover{
   <header>
    <div class="jumbotron ">
     <div class="container">
-        <h1 class="text-center"><!--<img src="imgs/logowatch1trans2.png" alt="the watch man logo" class="img-responsive center-block">-->
+        <h1 class="text-center"><img src="imgs/logowatch1trans2.png" alt="the watch man logo" class="img-responsive center-block">
         <img src="imgs/newslogo2.png" alt="the watch man logo" class="img-responsive center-block newstxt"></h1>
          <nav class="hidden-xs">
            <ul class="nav1 text-uppercase center-block">
@@ -279,13 +409,13 @@ a.view:hover{
             <h2 class="text-center">HEADER  GOES HERE...CASHY HEADER HERE..MAKE IT SLIDE</h2>
          <hr>-->
          <div class="row">
-             <div class="col-xs-12 page-headline">
+             <div class="col-xs-12 page-headline hidden ">
                 <h3 class="slideText text-center">THE WATCHMAN NEWSPAPER AND MAGAZINE</h3>
-                <h3 class="slideText text-center">The watchman newspaper and magazine</h3>
-                       <h3 class="slideText text-center">  Politics: Pdp and Apc fights it out</h3>
-                          <h3 class="slideText text-center"> Education: Asuu strike continues</h3>
-                           <h3 class="slideText text-center"> Health: Five tips to help you stay healthy</h3>
-                            <h3 class="slideText text-center">Sport: Man united vs Chelsea FC this saturday</h3><!--DESCRIPTIVE SUBTITLE  HERE. MAKE IT GOES ACROSS-->
+                <h3 class="slideText text-center text-uppercase">The watchman newspaper and magazine</h3>
+                       <h3 class="slideText text-center text-uppercase">  Politics: Pdp and Apc fights it out</h3>
+                          <h3 class="slideText text-center text-uppercase"> Education: Asuu strike continues</h3>
+                           <h3 class="slideText text-center text-uppercase"> Health: Five tips to help you stay healthy</h3>
+                            <h3 class="slideText text-center text-uppercase">Sport: Man united vs Chelsea FC this saturday</h3><!--DESCRIPTIVE SUBTITLE  HERE. MAKE IT GOES ACROSS-->
                 
              </div>
           </div>
@@ -303,14 +433,14 @@ a.view:hover{
                <p class="accent-color"> IMAGE CAPTION HERE...<a href="#" class="pull-right">READ MORE</a></p>
               </figcaption>
             </figure>
-             <div style="clear: both; border-top:1px solid #00303F; border-bottom:1px solid #00303F;padding-top: 5px;padding-bottom:12px;">
+             <div style="clear: both; border-top:1px solid rgba(0,48,63,.3); border-bottom:1px solid rgba(0,48,63,.3);padding-top: 5px;padding-bottom:12px;">
               <img src="imgs/2207.jpg" class="pull-left" width="70px" height="70px" 
               style="margin: ; margin-right: 5px;">
               <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                  <a href="#">Read More</a></p>
                </p>
              </div>
-             <div style="clear: both; border-bottom:1px solid #00303F; padding-top: 4px; padding-bottom: 12px;">
+             <div style="clear: both; border-bottom:1px solid rgba(0,48,63,.3); padding-top: 4px; padding-bottom: 12px;">
               <img src="imgs/2207.jpg" class=" pull-left" width="70px" height="70px" 
               style="margin: ; margin-right: 5px; ">
               <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -408,7 +538,7 @@ a.view:hover{
                         </div>
              </div>
            <figcaption>
-              <p class="accent-color subtitle-font">RECENT : NEWS ON THE GLOBE<a href="#" class="pull-right  bounce">NEWS</a></p>
+              <p class="accent-color subtitle-font">RECENT : NEWS ON THE GLOBE<a href="#" class="pull-right">NEWS</a></p>
             </figcaption>
         </figure>  
         <h4 class="accent-color subtitle-font">ANOTHER LONG TITLE WITH PIC HERE!</h4>
@@ -416,7 +546,7 @@ a.view:hover{
          <div class="col-sm-6 ">
 
 
-         <div class="card ">
+         <div class="card newscard">
          
          <div class="card-header">
            <a href="#">WORLD</a><span class="pull-right"><a href="#">NEWS</a></span>
@@ -425,7 +555,7 @@ a.view:hover{
          <div class="card-body">
                <img src="imgs/4162.jpg" class="img-responsive card-img">
                <p>
-                 <strong>Pakistan Ousted prime minister’s daughter fights for family legacy</strong>
+                 <strong>Pakistan ousted prime minister’s daughter fights for family legacy</strong>
 
                  <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
                </p>
@@ -436,7 +566,7 @@ a.view:hover{
 
 
          
-         <div class="card">
+         <div class="card newscard">
 
            <div class="card-header">
               <a href="#">POLITICS</a><span class="pull-right"><a href="#">NEWS</a></span>
@@ -444,7 +574,7 @@ a.view:hover{
             <div class="card-body">
                 <img src="imgs/Mohammed-Abdullahi-Abubakar-281x158.jpg" class="img-responsive card-img">
                  <p>
-                 <b>Northeast APC governors differ on restructuring, true federalism</b>
+                 <b>Northeast apc governors differ on restructuring, true federalism</b>
               
                   <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
                </p>
@@ -454,7 +584,7 @@ a.view:hover{
          </div>
          <div class="col-sm-6 ">
 
-           <div class="card">
+           <div class="card newscard">
 
             <div class="card-header">
               <a href="#">FASHION</a><span class="pull-right"><a href="#">NEWS</a></span>
@@ -462,21 +592,21 @@ a.view:hover{
             <div class="card-body">
              <img src="imgs/fashion11.jpg" class="img-responsive card-img">
                <p>
-                 <b>MHN AMBASSADOR 2017: Reigning Queen plans to fight early marriage</b>
+                 <b>MHN AMBASSADOR 2017: Reigning queen plans to fight early marriage</b>
                  <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
                </p>
              </div>
             </div>
          </div>
          <div class="col-sm-6 ">
-           <div class="card">
+           <div class="card newscard">
             <div class="card-header">
                <a href="#">HEALTH</a><span class="pull-right"><a href="#">NEWS</a></span>
               </div>
              <div class="card-body">
                     <img src="imgs/Pioneering-treatment-281x158.jpg" class="img-responsive card-img">
                  <p>
-                 <strong>Pioneering nerve treatment gives man in vegetative state signs of consciousness for five years</strong>
+                 <strong>pioneering nerve treatment gives man in vegetative state signs of consciousness for five years</strong>
                   <a href="#" class=" btn btn-primary btn-xs view"><small>READ MORE</small></a>
                </p>
               </div>
@@ -486,7 +616,7 @@ a.view:hover{
     
       </div>
        <div  class="col-sm-6 ">
-           <div id=""  class="card">
+           <div id=""  class="card newscard">
             <div class="card-header">
                  <a href="#">BUSINESS</a><span class="pull-right"><a href="#">NEWS</a></span>
            </div>
@@ -504,7 +634,7 @@ a.view:hover{
       </div>
            <div class="col-sm-6 ">
 
-           <div class="card">
+           <div class="card newscard">
 
             <div class="card-header">
                   <a href="#">LOCAL</a><span class="pull-right"><a href="#">NEWS</a></span>   
@@ -550,25 +680,24 @@ a.view:hover{
                </p>
              </div>
 
-              <h5 class="text-center"><a href="#" class="btn btn-primary view">VIEW MORE</a></h5>    <!--make this appear on small screen only--> 
+              <!--<h5 class="text-center"><a href="#" class="btn btn-primary view">VIEW MORE</a></h5>-->    <!--make this appear on small screen only--> 
              <!-- <hr>-->
             </div>
           </div>
 
         <div class="card">
-              <figure>
-                 <img src="imgs/123.jpg" class="img-responsive card-img">
-                <figcaption>
-                 <p class="accent-color"> IMAGE CAPTION HERE...<a href="#">Read More</a></p>
-                </figcaption>
-              </figure>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              <a href="#">Read More</a></p>
+           <div class="card-header">
+                <a href="#">ADVERTISEMENT</a></span>
+              </div>
+              <div  class="card-body advert">
+                <img src="imgs/fashion11.jpg" class="img-responsive card-img advertise">
+                <img src="imgs/123.jpg" class="img-responsive card-img advertise">
+                <img src="imgs/133.jpg" class="img-responsive card-img advertise">
+               </div>
+                  
            
-              <h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC </h4>
-             
          </div>
-          
+          <marquee><h4 class="accent-color subtitle-font">TITLE RELATED TO TOPIC  <a href="#" class="btn btn-danger btn-xs animated infinite bounce text-uppercase" style="font-family: sans-serif; border-radius: 15px">Order Now!</a></h4></marquee>
           <div class="card">
               
               <figure>
@@ -617,6 +746,7 @@ a.view:hover{
       <script src="js/main.js"></script>
 
       <script>
+
         $(document).ready( function() {
 
           //var slideText = ["The watchman newspaper and magazine",
@@ -628,8 +758,15 @@ a.view:hover{
               
   // $('.page-headline').html("<marquee><h2>Politics: Pdp and Apc fights it out</h2></marquee>");
             $('.page-headline h3:gt(0)').hide();
+             $('.page-headline').removeClass('hidden');
                         setInterval(function()
                         {$('.page-headline :first-child').fadeOut(0).next('h3.slideText').fadeIn(2000).end().appendTo('.page-headline');}, 6000);
+
+
+                        $('.advert img:gt(0)').hide();
+                         setInterval(function()
+                        {$('.advert :first-child').fadeOut(0).next('img.advertise').addClass('bounceOut').fadeIn(3000).addClass('tada').end().appendTo('.advert');}, 6000);
+
         });
 
         
